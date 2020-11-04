@@ -1,0 +1,1 @@
+../../../../MAMapKitDLL/Product/MAMapKitDLL.framework/Headers/MAPointAnnotation.h

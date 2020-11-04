@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BluetoothDemo.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>bitcode</key>
+			<true/>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>E1EB83CA9D2C516A2E7ED55326BBD1AAE03E939D</string>
+				<key>dateExpires</key>
+				<string>2019/1/12</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>8J34388U6P.com.RunDeXian.Wifipay</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>8J34388U6P</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>8J34388U6P.com.RunDeXian.Wifipay</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>BluetoothDemo.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>8c1e17c6-c339-4ce4-b516-9fd2879dc944</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: com.RunDeXian.Wifipay</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>8J34388U6P</string>
+				<key>name</key>
+				<string>Shenzhen Run De Xian Food Science and Technology Co., Ltd.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
