@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController">
+            <connections>
+                <outlet property="NavView" destination="tyh-EL-t9f" id="IR2-D6-tN4"/>
+                <outlet property="searchBackView" destination="atA-1d-SgL" id="NiH-Op-tmS"/>
+                <outlet property="searchTF" destination="Dki-7r-icf" id="Gk6-kV-JPU"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ta0-am-t87"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyh-EL-t9f">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSf-2O-Cng">
+                            <rect key="frame" x="15" y="29" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="ULu-rd-JAH"/>
+                                <constraint firstAttribute="height" constant="25" id="gaC-BC-BAp"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="返回按钮.png"/>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="524-fG-kWl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iSf-2O-Cng" firstAttribute="leading" secondItem="tyh-EL-t9f" secondAttribute="leading" constant="15" id="5Cv-jp-DIk"/>
+                        <constraint firstAttribute="height" constant="64" id="7h6-r9-82r"/>
+                        <constraint firstItem="iSf-2O-Cng" firstAttribute="top" secondItem="tyh-EL-t9f" secondAttribute="top" constant="29" id="90D-We-Fkf"/>
+                        <constraint firstAttribute="bottom" secondItem="iSf-2O-Cng" secondAttribute="bottom" constant="10" id="qYa-fM-C15"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atA-1d-SgL">
+                    <rect key="frame" x="58" y="26" width="295" height="30"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="yah-gf-rT8">
+                            <rect key="frame" x="10" y="5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Po7-d9-Zew"/>
+                                <constraint firstAttribute="height" constant="20" id="tPD-g0-9oW"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入小区、写字楼、学校等" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dki-7r-icf">
+                            <rect key="frame" x="40" y="0.0" width="255" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="hV7-cy-H8H"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="yah-gf-rT8" firstAttribute="top" secondItem="atA-1d-SgL" secondAttribute="top" constant="5" id="0kO-4B-R1G"/>
+                        <constraint firstItem="yah-gf-rT8" firstAttribute="leading" secondItem="atA-1d-SgL" secondAttribute="leading" constant="10" id="3jL-SF-Xc8"/>
+                        <constraint firstAttribute="trailing" secondItem="Dki-7r-icf" secondAttribute="trailing" id="7Ty-E8-SZ2"/>
+                        <constraint firstAttribute="bottom" secondItem="yah-gf-rT8" secondAttribute="bottom" constant="5" id="Gjq-iW-IfN"/>
+                        <constraint firstAttribute="height" constant="30" id="jED-xI-ris"/>
+                        <constraint firstItem="Dki-7r-icf" firstAttribute="leading" secondItem="yah-gf-rT8" secondAttribute="trailing" constant="10" id="mgi-UR-YIT"/>
+                        <constraint firstItem="Dki-7r-icf" firstAttribute="top" secondItem="atA-1d-SgL" secondAttribute="top" id="pvR-v8-6v0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tyh-EL-t9f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Aqb-cD-BHq"/>
+                <constraint firstAttribute="trailing" secondItem="tyh-EL-t9f" secondAttribute="trailing" id="IBI-wX-MmW"/>
+                <constraint firstItem="atA-1d-SgL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="JFE-Zs-BiA"/>
+                <constraint firstItem="atA-1d-SgL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="58" id="eOf-VH-XUw"/>
+                <constraint firstItem="tyh-EL-t9f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lCf-TJ-6fH"/>
+                <constraint firstAttribute="trailing" secondItem="atA-1d-SgL" secondAttribute="trailing" constant="22" id="zhZ-9K-Dar"/>
+            </constraints>
+            <point key="canvasLocation" x="202.5" y="-126.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="searchImage.png" width="16" height="16"/>
+        <image name="返回按钮.png" width="24" height="24"/>
+    </resources>
+</document>
